@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.date {
+	font-size: 18px;
+}
+
+.date .day {
+	font-size: 28px;
+}
+
+.nav  {
+	color: #919191;
+}
+
+.selected {
+	color: #000000;
+	font-weight: 700;
+}

@@ -1,0 +1,177 @@
+
+
+
+
+
+
+.main {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 352px;
+	height: 352px;
+	/*background-color: pink;*/
+	border: 2px solid #ccc;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-top: 40px;
+	align-items: center;
+	/*transform: rotate(360deg);*/
+	animation: move 4s linear  infinite;
+	animation-play-state: paused;
+}
+
+.main:hover {
+  /* 规定动画是否暂停或者播放 */
+  animation-play-state: paused;
+}
+
+
+.main > img {
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+	
+}
+
+.main .center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100px;
+	height: 100px;
+	/*background-color: green;*/
+	border: 2px solid #ccc;
+	border-radius: 50%
+}
+
+.main .small {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 75px;
+	height: 75px;
+	border: 2px solid #ccc;
+	background-color: #fff;
+	border-radius: 50%
+}
+
+@keyframes move{
+      0% { /*from*/
+        transform: rotate(0deg);
+      }
+      100% { /*to*/
+        transform: rotate(360deg);
+      }
+	}
+
+
+	
+
+.header {
+	display: flex;
+	height: 60px;
+	/* background-color: pink; */
+	margin-bottom: 20px;
+	
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	margin: 0 10px;
+	flex: 0 0 auto;
+}
+
+.header .nav {
+	display: flex;
+	justify-content: space-around;
+	flex: 1;
+}
+
+.header  img {
+	width: 41px;
+	height: 45px;
+}
+
+.player {
+	border: 1px solid #ccc;
+	background-color:rgba(217,217,217,.28);
+	display: flex;
+	justify-content: space-between;
+	width: 376px;
+	height: 73px;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 0 20px;
+	border-radius: 10px;
+}
+
+.player > img {
+	height: 60px;
+	margin-top: 5px;
+}
+
+.player .ming {
+	margin-top: 15px;
+}
+
+.player .xi {
+	font-size: 20px;
+}
+
+.player .dao {
+	font-size: 16px;
+}
+
+hr {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 80%;
+}
+
+.footer {
+	/* border: 1px solid red; */
+	margin-bottom: 30px;
+	flex: 0 0 auto;
+}
+
+
+.footer > .bottom {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.like {
+	/* border: 1px solid red; */
+	text-align: center;
+}
+
+.share {
+	/* border: 1px solid red; */
+	text-align: center;
+}
+
+.like > img {
+	height: 45px;
+}
+
+.share > img {
+	height: 45px;
+}
+
+body {
+	height: 100%;
+}
+
+.container {
+	
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
